@@ -1,17 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<h2> Create Student </h2>
-@endsection
 <div class="container mt-4">
     <div class="row">
         <div class="col-md-6 offset-3">
-            @session('success')
-            <div class="alert alert-success alert-dismissible fade show" role="alert">
-                <strong>Success!</strong> {{ $value }}
-                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-            </div>
-            @endsession
+            
             <div class="card bg-dark text-white mt-4">
                 <div class="card-body border border-light rounded">
 
@@ -53,3 +46,4 @@
         </div>
     </div>
 </div>
+@endsection
