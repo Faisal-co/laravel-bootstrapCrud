@@ -3,6 +3,6 @@
 @section('content')
 
 <div class="alert alert-warning" role="alert">
-    A simple warning alert—check Homapage Welcome!
+    A simple warning alert—check Homapage Welcome bostrp design!
 </div>
 @endsection
