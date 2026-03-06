@@ -1,5 +1,5 @@
 @extends('layouts.app')
-
+@section('title', 'Students List')
 @section('content')
 <div class="container mt-4">
     @section('content')
@@ -37,7 +37,7 @@
                 <td>{{$student->email}}</td>
                 <td>{{$student->phone}}</td>
                 <td>
-                    <a href="" class="btn btn-outline-warning">View</a>
+                    <a href="{{route('students.show', $student->id)}}" class="btn btn-outline-warning">View</a>
                     <a href="" class="btn btn-outline-info">Edit</a>
                     <a href="" class="btn btn-outline-danger">Delete</a>    
                 </td>
