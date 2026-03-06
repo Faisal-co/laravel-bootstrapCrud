@@ -38,8 +38,15 @@
                 <td>{{$student->phone}}</td>
                 <td>
                     <a href="{{route('students.show', $student->id)}}" class="btn btn-outline-warning">View</a>
-                    <a href="" class="btn btn-outline-info">Edit</a>
-                    <a href="" class="btn btn-outline-danger">Delete</a>    
+                    <a href="{{route('students.edit', $student->id)}}" class="btn btn-outline-info">Edit</a>
+                    <form action="{{route('students.destroy', $student->id)}}" method="POST" class = "d-inline" >
+                        @csrf
+                        @method('DELETE')
+                        <button type = "submit" class="btn btn-outline-danger"
+                        onclick = "return confirm('Are you sure to delete Student!')">
+                            Delete 
+                        </button>
+                    </form>   
                 </td>
             </tr>
             @empty
